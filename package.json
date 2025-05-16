@@ -5,6 +5,9 @@
   "license": "ISC",
   "author": "",
   "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "main": "brains-games.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
