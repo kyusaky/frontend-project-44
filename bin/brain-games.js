@@ -1,1 +1,3 @@
-console.log("Welcome to the Brain Games!");
+#!/usr/bin/env node.
+import welcomeUser from 'frontend-project-44\src\cli.js';
+welcomeUser();

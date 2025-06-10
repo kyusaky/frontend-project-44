@@ -8,6 +8,9 @@
   "bin": {
     "brain-games": "bin/brain-games.js"
   },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
   "main": "brains-games.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
