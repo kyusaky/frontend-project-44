@@ -1,7 +1,7 @@
 #!/usr/bin/env nodeAdd commentMore actions
 
 import welcomeUser from '../src/cli.js';
-import { gcd } from '../helpers/helpers.js';
+import { gcd, generationNumber } from '../helpers/helpers.js';
 import readlineSync from 'readline-sync';
 
 console.log('Welcome to the Brain Games!');
@@ -15,8 +15,8 @@ console.log('Find the greatest common divisor of given numbers.');
 let count = 0;
 
 for (let i = 0; i < 3; i = i + 1) {
-  const num1 = Math.max(1, Math.floor(Math.random() * 101));
-  const num2 = Math.max(1, Math.floor(Math.random() * 101));
+  const num1 = generationNumber();
+  const num2 = generationNumber();
   const peremGcd = gcd(num1, num2);
 
   console.log(`Question: ${num1} ${num2}`);

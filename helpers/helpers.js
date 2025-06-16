@@ -26,13 +26,14 @@ export const generationMathOperator = () => {
   }
 }
 
-export const isCheckingNumber = (num, answer) => {
-  if (num % 2 === 0 && answer === 'yes') {
-    return true
-  }
-  else if (num % 2 === 1 && answer === 'no') {
+export const isEven = num => {
+  if (num % 2 === 0) {
     return true
   }
 
   return false
 }
+
+export const generationNumber = () => {
+  return Math.floor(Math.random() * 101);
+};
