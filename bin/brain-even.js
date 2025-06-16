@@ -2,17 +2,7 @@
 
 import readlineSync from 'readline-sync'
 import welcomeUser from '../src/cli.js'
-
-const isCheckingNumber = (num, answer) => {
-  if (num % 2 === 0 && answer === 'yes') {
-    return true
-  }
-  else if (num % 2 === 1 && answer === 'no') {
-    return true
-  }
-
-  return false
-}
+import { isCheckingNumber } from '../helpers/helpers.js'
 
 console.log('Welcome to the Brain Games!')
 
